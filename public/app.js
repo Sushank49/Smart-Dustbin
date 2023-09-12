@@ -33,7 +33,7 @@ function showTime() {
 
   time.innerText = curTime;
   setTimeout(showTime, 1000);
-  footer.innerText = `© ${year} Sushank, Hardik, Paramayu`;
+  footer.innerText = `© ${year} Sushank, Hardik, Paramayu, Genius.`;
 }
 
 showTime();
