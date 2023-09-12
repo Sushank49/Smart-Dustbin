@@ -11,6 +11,8 @@ html {
 body {
   font-family: "Josefin Sans", sans-serif;
   background-color: #d3f9d8;
+  height: 100vh;
+  overflow: hidden;
 }
 
 .header{
@@ -19,8 +21,9 @@ body {
   justify-content: space-between;
 }
 
-.main {
-}
+/* .main {
+} */
+
 .sect-main{
   margin: 5rem 5rem
 }
@@ -40,4 +43,15 @@ body {
 .time {
   font-size: 2.4rem;
   color: #212529;
+}
+.footer {
+  font-size: 1.6rem;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  width: 100vw;
+}
+
+.footer-para {
+  text-align: center;
 }

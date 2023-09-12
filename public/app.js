@@ -1,6 +1,7 @@
 "use strict";
 
 const time = document.querySelector(".time");
+const footer = document.querySelector(".footer-para");
 
 function showTime() {
   const months = [
@@ -17,8 +18,8 @@ function showTime() {
     "Nov",
     "Dec",
   ];
-
   const date = new Date();
+  const year = date.getFullYear();
 
   // Corrected formattedHrs function
   const formattedHrs = () => {
@@ -28,10 +29,11 @@ function showTime() {
 
   const month = months[date.getMonth()];
 
-  let curTime = `${formattedHrs()}:${date.getMinutes()}:${date.getSeconds()}, ${date.getDate()} ${month} ${date.getFullYear()}`;
+  let curTime = `${formattedHrs()}:${date.getMinutes()}:${date.getSeconds()}, ${date.getDate()} ${month} ${year}`;
 
   time.innerText = curTime;
   setTimeout(showTime, 1000);
+  footer.innerText = `© ${year} Sushank, Hardik, Paramayu`;
 }
 
 showTime();
